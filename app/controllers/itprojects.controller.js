@@ -50,6 +50,7 @@ exports.findAll = (req, res) => {
 
     Itprojects
     .find(condition)
+    .sort({ other: 1 })
     .then(data => {
         res.send(data);   
     })
