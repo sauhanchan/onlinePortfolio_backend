@@ -21,7 +21,8 @@ db.mongoose.connect(db.url, {
 
 //#set the origin then add cors middlewares using corsOptions as an argument
 var corsOptions = {
-  origin: "http://localhost:8081"
+  //origin: "http://localhost:8081"
+  origin: "https://aesthetic-tulumba-4d6e98.netlify.app/"
 };
 app.use(cors(corsOptions));
 
